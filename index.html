@@ -2,30 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Official Smackin’ Sunflower Seeds – Online Store</title>
+    <title>Redirecting to Smackin’ Sunflower Seeds</title>
     <meta name="robots" content="noindex, nofollow" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      body {
-        font-family: sans-serif;
-        text-align: center;
-        padding-top: 40px;
-      }
-      .hidden {
-        display: none;
-      }
-    </style>
     <script>
-      // Instant redirect via JavaScript
-      location.replace("https://www.smackinsunflowerseeds.com/MATTHEW02602");
-    </script>
-  </head>
-  <body>
-    <h1>Redirecting to Smackin’ Sunflower Seeds...</h1>
-    <p>If you're not redirected, <a href="https://www.smackinsunflowerseeds.com/MATTHEW02602">click here</a>.</p>
+      (function () {
+        const url = new URL(window.location.href);
+        const gclid = url.searchParams.get("gclid");
+        
+        // Base affiliate link
+        let target = "https://www.smackinsunflowerseeds.com/MATTHEW02602";
 
+        // Optional: append gclid to destination (only if needed for conversion tracking)
+        if (gclid) {
+          target += `?gclid=${gclid}`;
+        }
+
+        // Instant redirect
+        window.location.replace(target);
+      })();
+    </script>
     <noscript>
       <meta http-equiv="refresh" content="0;url=https://www.smackinsunflowerseeds.com/MATTHEW02602" />
     </noscript>
+  </head>
+  <body>
+    <p>Redirecting to the official Smackin’ store...</p>
   </body>
 </html>
